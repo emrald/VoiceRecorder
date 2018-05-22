@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#393939" >
+
+    <RelativeLayout
+        android:id="@+id/voicerecord_relative_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/voicerecord_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Voice Recoder"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/voicerecord_btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/settings"
+            android:gravity="right" >
+        </Button>
+
+        <Button
+            android:id="@+id/voicerecord_btn_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/listview" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/voicerecord_relative_imrecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+            android:id="@+id/voicerecord_im_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/recorder"/>
+
+        <TextView
+            android:id="@+id/voicerecord_tv_storagecapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voicerecord_im_recorder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/voicerecord_im_equilizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voicerecord_tv_storagecapacity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/voicerecord_relative_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/voicerecord_relative_recordbtn"
+        android:layout_below="@+id/voicerecord_relative_imrecord"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/voicerecord_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text=""
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/voicerecord_relative_recordbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        <ImageButton
+            android:id="@+id/voicerecord_btn_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="#303030"
+            android:src="@drawable/recordbtn" />
+
+        <ImageButton
+            android:id="@+id/voicerecord_btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="#303030"
+            android:src="@drawable/donebtn" />
+    </RelativeLayout>
+
+</RelativeLayout>

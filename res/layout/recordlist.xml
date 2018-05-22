@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383838">
+   
+    
+    <RelativeLayout
+        android:id="@+id/recordlist_relative_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/recordlist_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Recordings"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/recordlist_btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/settings"
+            android:gravity="right" >
+        </Button>
+
+        <Button
+            android:id="@+id/recordlist_btn_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/listview" />
+    </RelativeLayout>     
+
+    <ListView
+        android:id="@+id/recordlist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/recordlist_relative_top"
+        android:layout_above="@+id/recordlist_relative_bottom"
+        android:background="#57534f">   
+       
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/recordlist_relative_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/header"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/recordlist_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit" />
+
+        <Button
+            android:id="@+id/recordlist_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/delete" />
+
+        <Button
+            android:id="@+id/recordlist_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/share" />
+    </RelativeLayout>
+
+</RelativeLayout>

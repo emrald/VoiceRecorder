@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:baselineAligned="false"
+ 	android:descendantFocusability="blocksDescendants">
+
+    <CheckBox
+        android:id="@+id/recordlistrowcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/recordlistrow_tv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/recordlistrowcheckbox"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/recordlistrow_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recordlistrow_tv_record"
+        android:layout_toRightOf="@+id/recordlistrowcheckbox"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="8dp" />
+
+   
+
+    <TextView
+        android:id="@+id/recordlistrow_tv_recordingtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/recordlistrow_tv_record" 
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/recordlistrow_tv_recordingsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recordlistrow_tv_recordingtime"
+        android:layout_alignBaseline="@+id/recordlistrow_tv_time"
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="8dp" />
+
+</RelativeLayout>

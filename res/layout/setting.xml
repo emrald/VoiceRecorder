@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#393939">
+    
+     <RelativeLayout
+        android:id="@+id/setting_relative_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/setting_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Settings"
+            android:textColor="#876100"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/setting_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/backbtn" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/setting_relative_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_relative_top">
+        
+        <ListView 
+            android:id="@+id/setting_list"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<!-- style="@style/mytheme" -->
+			
+            
+            
+        </ListView>
+        
+        
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>
